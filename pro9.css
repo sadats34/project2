@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282828;
+}
+
+.clock{
+    width: 350px;
+    height: 350px;
+ 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 10px 10px 15px #202020 ,
+                inset -10px -10px 15px #202020;
+    border-radius: 50%; 
+    background-image: url(./ساعت.png); 
+    background-size: cover;
+
+
+}
+.clock::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #747474;
+    border-radius: 50%;
+    z-index: 4;
+
+}
+
+.clock .sec{
+    width: 230px;
+    height: 230px;
+    
+
+}
+.clock .min{
+    width: 200px;
+    height: 200;
+}
+.sec::before{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 150px;
+    background-color: aqua;
+    
+    border-radius: 6px 6px 0 0;
+    z-index: 3;
+
+}
+
+.clock .min,
+.clock .sec,
+.clock .hour{
+    position: absolute;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.clock .hour{
+    width: 160px;
+    height: 160px;
+}
+
+.min::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 120px;
+    top: -100px;
+    background-color: rgb(13, 0, 255);
+    
+    border-radius: 6px 6px 0 0;
+    z-index:2;
+
+}
+.hour::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100px;
+    background-color: rgb(255, 128, 0);
+    
+    border-radius: 6px 6px 0 0;
+    z-index: 1;
+
+}

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: dodgerblue;
+
+    font-family: "Marhey";
+}
+.container{
+    width: 600px;
+    height: 300px;
+    
+    box-shadow: 0 0 40px rgba(40, 40, 40, 0.677);
+
+    border-radius: 10px 25px 10px 25px;
+    margin: 100px auto;
+    position: relative;
+}
+.card{
+    width: 300px;;
+    height: 300px;
+    
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(40, 40, 40, 0.88);
+    position: absolute;
+    right: 20px;
+    top: -30px;
+    overflow:hidden;
+}
+.card img{
+    width: 100%;
+
+}
+.card p{
+    padding-right: 15px;
+    margin: 5px;
+}
+.card p + .card i{
+    margin: 10px;
+}
+.bio{
+    width: 250px;
+    position: absolute;
+    left: 12px;
+    top:10px;
+    font-size: 14px;
+    text-align: justify;
+    word-spacing: .5px;
+}

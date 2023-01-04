@@ -1,0 +1,107 @@
+html{
+    font-size: 100%;
+}
+.container{
+    width: 1000px;
+    margin:20px auto;
+}
+.form{
+    margin-top: 2rem;
+}
+.form .title{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: saddlebrown;
+    margin-bottom: 2rem;
+}
+
+.form lable,
+.form input:not([type="checkbox"]){
+    display: block;
+    margin-bottom: 1rem;
+}
+.form input:not([type="checkbox"]){
+    width: 100%;
+    padding: 0.5rem 0;
+    border-radius: 10px;
+    border: 2px solid brown;
+}
+
+input.check{
+    display: none;
+}
+.checkbox{
+    position: relative;
+    padding-right: 2.5rem;
+    padding-top: 0.5rem;
+}
+.checkbox .checkmark{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(251, 251, 246);
+    border: 2px solid brown;
+    border-radius: 7px;
+    display: inline-block;
+    position: absolute;
+    right: 2px;
+    top: 1px;
+
+}
+.checkbox:hover .checkmark{
+    background-color: lightblue;
+    cursor: pointer;
+}
+.checkmark::after{
+    content: " ";
+    position: absolute;
+    right: 0.6rem;
+    top: 0.4rem;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);
+    display: none;
+}
+.checkbox input:checked ~ .checkmark::after{
+    display: block;
+}
+.btn{
+    padding: 0.4rem 0.5rem;
+    margin-top: 1rem;
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.con{
+    width: 1000px;
+    height: 500px;
+    margin-top: 6rem;
+}
+.con div{
+    background-color: darkkhaki;
+    border-radius: 10px;
+    margin: 0.5rem auto;
+    text-align: center;
+    padding: 1rem;
+    width: 500px;
+}
+.con img{
+    width: 500px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    filter: blur(1px);
+}
+img:hover{
+    filter: blur(0);
+    cursor: pointer;
+}
